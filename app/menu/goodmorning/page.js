@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function Breakfast() {
+export default function Breakfast () {
   return (
-      <div>
+    <div>
       <h1>What are you having for breakfast?</h1>
       <div><Link href='/menu'><h1>Back to menu...</h1></Link></div>
     </div>

@@ -1,15 +1,16 @@
 import Aboutnav from "../components/aboutnav/aboutnav";
+import Footer from "../components/footer/footer";
 
 export const metadata = {
-    title:'Food App/About Us'
+    title: 'Food App/About Us'
 }
-export default function AboutLayout({ children }) {
+export default function AboutLayout ({ children }) {
     return (
         <section className='antialiased font-Poppins'>
-            <Aboutnav/>
+            <Aboutnav />
             <div>{children}</div>
-        
-            
+            <Footer />
+
         </section>
     )
 }

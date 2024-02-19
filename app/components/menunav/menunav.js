@@ -19,7 +19,7 @@ export default function Menunav() {
           <h1 className='text-xl tablet:text-2xl laptop:text-4xl text-gray-800 border-b-2 border-neutral-300 font-Caveat'>Frexxie Foods</h1>
         </div>
         <div className='text-gray-700 '>
-          <ul className=' mobile:hidden tablet:flex gap-x-4'>
+          <ul className=' mobile:hidden tablet:flex gap-x-4 font-semibold'>
             <Link href="/"><li>Home</li></Link>
             <Link href="/placeorder"><li>Order</li></Link>
             <Link href="/contact"><li>Contacts</li></Link>

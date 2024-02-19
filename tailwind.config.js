@@ -13,7 +13,7 @@ module.exports = {
         Poppins:['"Poppins"',"sans-serif"],
       },
       backgroundImage: {
-        'hero': "url('/images/jollof.jpg')",
+        'hero': 'url("../public/jollof.jpg")',
       },
       screens: {
         'mobile': '300px',
