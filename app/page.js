@@ -10,7 +10,7 @@ import Footer from "./components/footer/footer";
 
 
 export default function Page () {
-  const time = () => {
+  const date = () => {
     return new Date().getFullYear()
   }
 
@@ -68,16 +68,16 @@ export default function Page () {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-center text-xl font-bold mt-6 z-10'><h1>&copy; {time()} </h1> </div>
+        <div className='flex items-center justify-center text-xl font-bold mt-6 z-10'><h1>&copy; {date()} </h1> </div>
       </div>
       <div>
-        <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} />
+        <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} />
       </div>
       {/* Showcase Section */}
-      <div>
+      <div className="h-20 bg-neutral-800 ">
         <div>
           <div>
-
+            <h1 className="show py-6 px-6 text-white text-nowrap ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facilis magnam aliquam quia nam recusandae similique molestias labore voluptates rerum cum soluta ea, dolorem, repudiandae obcaecati officia natus temporibus! Iste.</h1>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function Page () {
       <div className="parallax" >
         <Parallax />
       </div>
-      <div className="text-gray-100 px-6 bg-gray-900 py-10">
+      <div className="text-gray-900 px-6 bg-gradient-radial from-sky-400 via-slate-2000 to-sky-300 py-10">
         <div className="flex space-x-8  ">
           <div className="border-2 p-20 flex items-center justify-center"><h1>Card One</h1></div>
           <div className="border-2 p-20 flex items-center justify-center"><h1>Card Two</h1></div>

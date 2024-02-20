@@ -63,7 +63,7 @@ export default function Navbar () {
           </div>
         </nav>
         :
-        <nav className='overflow-x-hidden border absolute w-[100%] h-dvh bg-white text-gray-700 translate-x-[140px] transition duration-[1.1s] backdrop-blur-lg shadow-sm tablet:hidden'>
+        <nav className='overflow-x-hidden border absolute w-[100%] h-screen bg-white text-gray-700 translate-x-[140px] transition duration-[1.1s] backdrop-blur-lg shadow-sm tablet:hidden'>
           <div>
 
             <div className='text-gray-700 '>

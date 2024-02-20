@@ -1,13 +1,14 @@
 
-import { motion } from "framer-motion";
-export default function Parallax() {
+// import { motion } from "framer-motion";
+export default function Parallax () {
   return (
-    <div className="h-full">
+    <div className="h-full p-6">
       <div className="flex flex-col items-center justify-center h-full ">
-        <motion.h1 className="text-4xl tablet:text-5xl laptop:text-6xl font-Montserrat font-semibold ">Best foods from Top Notch Chefs</motion.h1>
-              
-          </div>
+        <h1 className="text-3xl tablet:text-5xl laptop:text-6xl font-Montserrat font-semibold ">Best foods from Top Notch Chefs</h1>
+        <p className="text-2xl font-Poppins font-bold">Meet Our talented chefs</p>
+
       </div>
+    </div>
   )
 }
 

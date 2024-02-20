@@ -2,7 +2,7 @@
 
 export default function Footer () {
   return (
-    <div className='mt-1 '>
+    <div className='mt-1 font-Poppins'>
       <div className='bg-neutral-900 text-slate-100 px-6 py-8'>
         <div>
           <div>
