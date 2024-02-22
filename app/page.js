@@ -74,10 +74,10 @@ export default function Page () {
         <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} />
       </div>
       {/* Showcase Section */}
-      <div className="h-20 bg-neutral-800 ">
+      <div className="p-8 bg-neutral-800 ">
         <div>
           <div>
-            <h1 className="show py-6 px-6 text-white text-nowrap ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facilis magnam aliquam quia nam recusandae similique molestias labore voluptates rerum cum soluta ea, dolorem, repudiandae obcaecati officia natus temporibus! Iste.</h1>
+            <h1 className="show text-center animate-bounce text-white text-nowrap whitespace-nowrap tablet:text-5xl font-Montserrat ">Everything From Breakfast to Breakfast</h1>
           </div>
         </div>
       </div>

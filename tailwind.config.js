@@ -34,7 +34,7 @@ module.exports = {
         Poppins:['"Poppins"',"sans-serif"],
       },
       backgroundImage: {
-        'hero': 'url("../public/jollof.jpg")',
+        // 'hero': "url('https://www.pexels.com/photo/a-woman-eating-a-bread-while-working-7689765/')",
       },
       screens: {
         'mobile': '300px',

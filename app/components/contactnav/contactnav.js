@@ -46,7 +46,7 @@ export default function Contactnav () {
 
 
       {isOpen == false ?
-        <div className='absolute w-60 h-full bg-yellow-400 text-gray-700 p-4 -translate-x-[-9999px] transition duration-[0.9s]'>
+        <div className='absolute w-60 h-full bg-white  text-gray-700 p-4 z-10 -translate-x-[-9999px] transition duration-[0.9s] opacity-0'>
           <div>
             <div className='text-gray-700 '>
               <ul className=' flex flex-col gap-y-3  '>
@@ -59,7 +59,7 @@ export default function Contactnav () {
           </div>
         </div>
         :
-        <div className='overflow-x-hidden border absolute w-[100%] h-dvh bg-white text-gray-700 translate-x-[140px] transition duration-[1.1s] backdrop-blur-lg shadow-sm tablet:hidden'>
+        <div className='overflow-x-hidden border absolute w-[100%] h-full bg-white z-10 text-gray-700 translate-x-[140px] transition duration-[0.4s] backdrop-blur-lg shadow-sm tablet:hidden'>
           <div>
 
             <div className='text-gray-700 '>

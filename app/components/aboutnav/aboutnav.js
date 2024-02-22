@@ -49,7 +49,7 @@ export default function Aboutnav () {
 
 
       {isOpen == false ?
-        <nav className='absolute w-60 h-full bg-yellow-400 text-gray-700 p-4 -translate-x-[-9999px] transition duration-[1.2s]'>
+        <nav className='absolute w-60 h-full bg-yellow-400 text-gray-700 p-4 -translate-x-[-9999px] transition duration-[0.9s]'>
           <div>
             <div className='text-gray-700 '>
               <ul className=' flex flex-col gap-y-3  '>
@@ -62,7 +62,7 @@ export default function Aboutnav () {
           </div>
         </nav>
         :
-        <nav className='overflow-x-hidden border absolute w-[100%] h-dvh bg-white text-gray-700 translate-x-[140px] transition duration-[0.7s] backdrop-blur-lg shadow-sm tablet:hidden'>
+        <nav className='overflow-x-hidden border absolute w-[100%] h-svh bg-white text-gray-700 translate-x-[140px] transition duration-[0.4s] filter backdrop-blur-lg shadow-sm tablet:hidden'>
           <div>
 
             <div className='text-gray-700 '>
