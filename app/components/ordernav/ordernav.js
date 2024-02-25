@@ -27,6 +27,7 @@ export default function Ordernav () {
                         <Link href="/"><li>Home</li></Link>
                         <Link href="/menu"><li>Menu</li></Link>
                         <Link href="/contact"><li>Contacts</li></Link>
+                        <Link href="/blog"><li>Blog</li></Link>
                         <Link href="/about"><li>About Us</li></Link>
                     </ul>
                 </div>

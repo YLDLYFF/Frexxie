@@ -57,6 +57,7 @@ export default function Aboutnav () {
                 <Link href="/menu"><li>Menu</li></Link>
                 <Link href="/placeorder"><li>Order</li></Link>
                 <Link href="/contact"><li>Contacts</li></Link>
+                <Link href="/blog"><li>Blog</li></Link>
               </ul>
             </div>
           </div>

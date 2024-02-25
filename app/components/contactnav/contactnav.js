@@ -23,6 +23,7 @@ export default function Contactnav () {
             <Link href="/"><li>Home</li></Link>
             <Link href="/placeorder"><li>Order</li></Link>
             <Link href='/menu'>Menu</Link>
+            <Link href="/blog"><li>Blog</li></Link>
             <Link href="/about"><li>About Us</li></Link>
           </ul>
         </div>
