@@ -6,10 +6,10 @@ export const metadata = {
 }
 export default function MenuLayout({ children }) {
     return (
-        <section className='antialiased font-Poppins'>
+        <section className='antialiased font-Poppins '>
             <Menunav/>
             <div>{children}</div>
-            <Footer/>
+            {/* <Footer/> */}
             
         </section>
     )

@@ -2,20 +2,20 @@ import Link from "next/link";
 
 export default function Page () {
   return (
-    <div className='mt-1 px-6 h-screen'>
+    <div className='mt-1 h-screen'>
       <div>
-        <div className='grid grid-cols-1 tablet:grid-cols-2 gap-8 laptop:grid col-span-2 '>
-          <div className='flex flex-col'>
-            <Link href='/menu/goodmorning'><div className='border bg-sky-300 rounded-md p-20 flex items-center justify-center'>
+        <div className='m-0 p-0 '>
+          <div className='flex items-center justify-center w-full tablet:h-screen'>
+            <div className='border-r-2 w-screen tablet:h-screen bg-gray-200 p-20 flex items-center justify-center'>
               <h1>Breakfast</h1>
 
             </div>
-            </Link>
-            <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur quo.</p></div>
+          
+            <div className="w-screen"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur quo.</p></div>
           </div>
-          <div className='border bg-fuchsia-300 rounded-md p-20 flex items-center justify-center'>Lunch</div>
+          {/* <div className='border bg-fuchsia-300 rounded-md p-20 flex items-center justify-center'>Lunch</div>
           <div className='border bg-teal-300 rounded-md p-20 flex items-center justify-center'>Dinner</div>
-          <div className='border bg-stone-300 rounded-md p-20 flex items-center justify-center'>Desert</div>
+          <div className='border bg-stone-300 rounded-md p-20 flex items-center justify-center'>Desert</div> */}
         </div>
       </div>
 
