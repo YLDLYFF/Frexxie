@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import ThemeSwitch from '/themeswitcher/themeswitcher';
+
+
 export default function Menunav() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,6 +27,7 @@ export default function Menunav() {
             <Link href="/placeorder"><li>Order</li></Link>
             <Link href="/contact"><li>Contacts</li></Link>
             <Link href="/about"><li>About Us</li></Link>
+            <ThemeSwitch />
           </ul>
               </div>
               {isOpen == false ? 

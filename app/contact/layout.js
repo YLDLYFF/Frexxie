@@ -5,7 +5,7 @@ export const metadata = {
 }
 export default function MenuLayout ( { children } ) {
     return (
-        <section className='antialiased font-Poppins'>
+        <section className='antialiased font-Poppins h-dvh'>
             <Contactnav />
             <div>{ children }</div>
             <Footer />

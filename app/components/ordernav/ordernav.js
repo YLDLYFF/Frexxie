@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-
+import ThemeSwitch from './themeswitcher/themeswitcher';
 
 
 
@@ -29,6 +29,7 @@ export default function Ordernav () {
                         <Link href="/contact"><li>Contacts</li></Link>
                         <Link href="/blog"><li>Blog</li></Link>
                         <Link href="/about"><li>About Us</li></Link>
+                        <ThemeSwitch />
                     </ul>
                 </div>
                 {isOpen == false ?

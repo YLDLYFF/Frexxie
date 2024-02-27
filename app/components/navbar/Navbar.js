@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-
+import ThemeSwitch from './themeswitcher/themeswitcher';
 
 
 
@@ -22,15 +22,9 @@ export default function Navbar () {
         <div>
           <h1 className='text-xl tablet:text-2xl laptop:text-4xl text-gray-100 border-b-2 border-neutral-300 font-Caveat'>Frexxie Foods</h1>
         </div>
-        {/* <div className='text-gray-700 '>
-          <ul className=' mobile:hidden tablet:flex gap-x-4'>
-            <Link href="/"><li>Home</li></Link>
-            <li>Menu</li>
-            <li>Order</li>
-            <Link href="/contact"><li>Contacts</li></Link>
-            <Link href="/about"><li>About Us</li></Link>
-          </ul>
-        </div> */}
+         <div className='text-gray-700 '>
+          <ThemeSwitch />
+        </div> 
         {isOpen == false ?
           <div className='hidden cursor-pointer tablet:hidden ' >
             <svg onClick={clickHandler} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

@@ -1,9 +1,9 @@
 "use client";
 // import picture1 from './../../public'
 import Link from "next/link";
-import Image from "next/image";
+import ZoomParallax from "../components/blogzoomparallax/zoomparallax";
 import Parallax from "../components/parallax/parallax";
-import { useScroll,useTransform, motion } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 // import Footer from "../components/footer/footer";
 import './../globals.css'
 import { useRef } from "react";
@@ -12,26 +12,26 @@ import { useRef } from "react";
 
 
 export default function Page () {
-    const container = useRef( null );
-    const { scrollYProgress } = useScroll( {
-        target: container,
-        offset: [ 'start start', 'end end' ]
-    } );
-    
-    const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-
 
     return (
         <div className="">
-            <div ref={container} className="h-[300vh] relative">
-                <div className="sticky top-0 h-screen">
-                    <div className="flex items-center justify-center w-full h-full absolute top-0">
-                        <motion.div style={{ scale: scale4 }} className="w-[25vw] h-[25vh] relative">
-                            <Image className="object-cover" src="/crispy-fried-chicken-plate-with-salad-carrot.jpg" alt='food image' fill={ true } />
-                        </motion.div>
+            <div className="bg-gray-100">
+                <div className="px-6 py-10">
+                    <div>
+                        <h1 className="text-2xl tablet:text-3xl laptop:text-6xl font-Montserrat font-semibold mb-4">Blog</h1>
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus?</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus?</p>
+                    
                 </div>
             </div>
+
+            {/* Zoom Parallax component */ }
+            <div >
+                <ZoomParallax/>
+            </div>
+        
 
             {/* Showcase Section */ }
             <div className="p-8 bg-neutral-800 ">

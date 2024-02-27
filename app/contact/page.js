@@ -3,7 +3,7 @@ import ContactForm from "../components/contact/contact";
 export default function Page () {
   return (
     <div className="">
-      <div className=" min-h-[60dvh] flex items-center justify-center tablet:min-h-screen">
+      <div className=" min-h-[80dvh] flex items-center justify-center tablet:min-h-screen">
         {/* moving balls */}
         <div className="relative w-full flex items-center justify-center">
           <div className="absolute top-5 -left-30 w-[10rem] h-[10rem] bg-purple-300 rounded-full mix-blend-multiply filter blur-lg animate-blob opacity-65 tablet:-top-36 tablet:w-[40rem] tablet:h-[40rem]"></div>
