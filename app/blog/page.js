@@ -15,7 +15,7 @@ export default function Page () {
 
     return (
         <div className="">
-            <div className="bg-gray-100">
+            <div className="bg-gray-100 dark:text-gray-900">
                 <div className="px-6 py-10">
                     <div>
                         <h1 className="text-2xl tablet:text-3xl laptop:text-6xl font-Montserrat font-semibold mb-4">Blog</h1>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 
-import ThemeSwitch from '/themeswitcher/themeswitcher';
+import ThemeSwitch from "../themeswitcher/themeswitcher";
 
 
 export default function Contactnav () {

@@ -3,8 +3,7 @@ import Link from "next/link";
 import Navbar from "./components/navbar/Navbar";
 // import { motion } from "framer-motion";
 import './globals.css';
-import Image from "next/image";
-import ThemeSwitch from './components/themeswitcher/themeswitcher';
+// import Image from "next/image";
 
 
 
@@ -20,7 +19,6 @@ export default function Page () {
     // hero with links to pages
     <div className=" text-gray-800 dark:text-white">
       <Navbar />
-      <ThemeSwitch />
       <div className=' flex flex-col items-center justify-center relative overflow-y-hidden h-svh tablet:h-screen'>
         <div ><h1 className='text-4xl tablet:text-5xl laptop:text-8xl font-Montserrat font-semibold mb-4'>Welcome To Frexxie</h1></div>
         <div><p className=' tablet:text-xl laptop:text-2xl mb-4 animate-pulse font-semibold'>What are we doing today?...</p></div>
