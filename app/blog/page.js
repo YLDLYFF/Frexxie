@@ -38,7 +38,7 @@ export default function Page () {
             </div>
 
             {/* Zoom Parallax component */}
-            <div >
+            <div className="hidden laptop:block">
 
                 <ZoomParallax />
 
