@@ -1,7 +1,7 @@
 // import { Inter } from "next/font/google";
-import "./globals.css";
-// import { Html } from "next/document";
 
+import "./globals.css";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 // const inter = Inter({ subsets: ["latin"] });
 import { Providers } from "./providers";
 export const metadata = {
@@ -12,9 +12,10 @@ export const metadata = {
 export default function RootLayout ( { children } ) {
   return (
     <html lang="en">
+      
       <body className='overflow-x-hidden antialiased font-sans bg-white text-gray-900 dark:bg-black dark:text-white transition-all transition-duration-[0.7s]'>
         <Providers>
-          <main>{ children }</main>
+          <main>{children}</main>
         </Providers>
 
       </body>
