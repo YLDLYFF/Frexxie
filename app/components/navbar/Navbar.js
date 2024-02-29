@@ -20,7 +20,7 @@ export default function Navbar () {
     <div className='px-3'>
       <div className='  flex items-center justify-between p-2 shadow-sm sticky'>
         <div>
-          <h1 className='text-xl tablet:text-2xl laptop:text-4xl text-gray-100 border-b-2 border-neutral-300 font-Caveat'>Frexxie Foods</h1>
+          <h1 className='text-xl tablet:text-2xl laptop:text-4xl border-b-2 border-neutral-300 font-Caveat text-gray-800 dark:text-white'>Frexxie Foods</h1>
         </div>
          <div className='text-gray-700 '>
           <ThemeSwitch />

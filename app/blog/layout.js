@@ -5,7 +5,7 @@ export const metadata = {
 }
 export default function BlogLayout ( { children } ) {
   return (
-    <section className='antialiased font-Poppins'>
+    <section className='antialiased font-Poppins h-screen'>
       <Blognav />
       <div>{ children }</div>
       <Footer />

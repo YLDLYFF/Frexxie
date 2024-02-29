@@ -6,16 +6,26 @@ import Parallax from "../components/parallax/parallax";
 import { useScroll, useTransform, motion } from "framer-motion";
 // import Footer from "../components/footer/footer";
 import './../globals.css'
-import { useRef } from "react";
-
+import { useEffect } from "react";
+import Lenis from '@studio-freight/lenis';
 
 
 
 export default function Page () {
+    useEffect(() => {
+        const lenis = new Lenis()
+
+        function raf (time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    }, [])
 
     return (
         <div className="">
-            <div className="bg-gray-100 dark:text-gray-900">
+            <div className=" dark:text-gray-100 dark:bg-black">
                 <div className="px-6 py-10">
                     <div>
                         <h1 className="text-2xl tablet:text-3xl laptop:text-6xl font-Montserrat font-semibold mb-4">Blog</h1>
@@ -23,17 +33,20 @@ export default function Page () {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus?</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex commodi, accusantium eius consequatur neque, maiores eveniet pariatur vel labore odit aliquam nostrum minus reprehenderit itaque natus quidem quos delectus?</p>
-                    
+
                 </div>
             </div>
 
-            {/* Zoom Parallax component */ }
+            {/* Zoom Parallax component */}
             <div >
-                <ZoomParallax/>
-            </div>
-        
 
-            {/* Showcase Section */ }
+                <ZoomParallax />
+
+
+            </div>
+
+
+            {/* Showcase Section */}
             <div className="p-8 bg-neutral-800 ">
                 <div>
                     <div>
@@ -42,7 +55,7 @@ export default function Page () {
                 </div>
             </div>
 
-            {/* Parallax Section */ }
+            {/* Parallax Section */}
             <div className="parallax" >
                 <Parallax />
             </div>
@@ -55,9 +68,9 @@ export default function Page () {
                     <div className="border-2 p-20 flex items-center justify-center"><h1>Card five</h1></div>
                 </div>
             </div>
-            {/* Second Parallax */ }
+            {/* Second Parallax */}
             <div className="parallax-2" >
-                {/* <Parallax /> */ }
+                {/* <Parallax /> */}
             </div>
         </div>
     )
