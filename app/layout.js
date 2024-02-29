@@ -13,7 +13,7 @@ export default function RootLayout ( { children } ) {
   return (
     <html lang="en">
       
-      <body className='overflow-x-hidden relative w-full h-dvh antialiased font-sans bg-white text-gray-900 dark:bg-black dark:text-white transition-all transition-duration-[0.7s]'>
+      <body className='overflow-x-hidden relative max-w-full h-dvh antialiased font-sans bg-white text-gray-900 dark:bg-black dark:text-white transition-all transition-duration-[0.7s]'>
         <Providers>
           <main>{children}</main>
         </Providers>
