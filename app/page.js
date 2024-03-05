@@ -17,10 +17,10 @@ export default function Page () {
     // bg-gradient-to-l from-white via-sky-200 to-gray-100
     // h - dvh tablet: h - vh
     // hero with links to pages
-    <div className=" text-gray-800 dark:text-white overflow-y-hidden ">
+    <div className=" text-gray-900 dark:text-white overflow-y-hidden ">
       <Navbar />
       <div className=' flex flex-col items-center justify-center relative h-svh tablet:h-screen'>
-        <div  ><h1 className='text-4xl tablet:text-5xl laptop:text-8xl font-Montserrat font-semibold mb-4 '>Welcome To Frexxie</h1></div>
+        <div  ><h1 className='text-3xl tablet:text-5xl laptop:text-8xl font-Montserrat font-semibold mb-4 '>Welcome To Frexxie</h1></div>
         <div><p className=' tablet:text-xl laptop:text-2xl mb-4 animate-pulse font-semibold'>What are we doing today?...</p></div>
         <div className=' border-b'>
           <div>
@@ -33,20 +33,20 @@ export default function Page () {
                       <Link href="/"><li className=' block'>Home</li></Link>
                   </div>  */}
                 <div className='flex items-center hover:bg-gray-200 dark:hover:bg-gray-800 gap-x-2 p-2 rounded-sm cursor-pointer hover:transition duration-[0.3s]'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={ 1.5 } stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                   </svg>
 
                   <Link href="/menu"><li className='block'>Go to through our menu</li></Link>
                 </div>
                 <div className='flex items-center hover:bg-gray-200 dark:hover:bg-gray-800 gap-x-2 p-2 rounded-sm cursor-pointer hover:transition duration-[0.3s]'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={ 1.5 } stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                   </svg>
                   <Link href="/placeorder"><li className='block'>Make an order</li></Link>
                 </div>
                 <div className='flex items-center hover:bg-gray-200 dark:hover:bg-gray-800 gap-x-2 p-2 rounded-sm cursor-pointer hover:transition duration-[0.3s]'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" strokeWidth={ 1.5 } stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
                   </svg>
 
@@ -71,11 +71,11 @@ export default function Page () {
             </div>
           </div>
         </div>
-        <div className='flex items-center justify-end text-xl font-bold mt-6 '><h1>&copy; {date()} </h1>
+        <div className='w-full flex items-center justify-center text-xl font-semibold mt-6 '><h1>| &copy; { date() } |</h1>
         </div>
       </div>
       <div>
-        {/* <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} new />  */}
+         {/* <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} new />   */}
       </div>
 
 

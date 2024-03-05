@@ -10,6 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'homeDefaultNav':'#ffd60a',
+        'homeDefaultNavDark':'#202020',
+        'homeDefaultDark':'#000000',
+      },
       animation: {
         blob:"blob 6s infinite"
       },
@@ -40,7 +45,7 @@ module.exports = {
       screens: {
         'mobile': '300px',
         // => @media(min-width: 320px){ ... }
-        'tablet': '520px',
+        'tablet': '593px',
         // => @media (min-width: 480px) { ... }
 
         'laptop': '1024px',

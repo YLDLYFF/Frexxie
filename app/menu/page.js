@@ -1,8 +1,9 @@
 "use client";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
-
+import Image from "next/image";
 import Link from "next/link";
+import coffee from './../../public/pexels-emrah-tolu-2662875.jpg'
 
 export default function Page () {
   const ref = useRef( null );
@@ -18,13 +19,18 @@ export default function Page () {
     <div className=' '>
       <div>
         <div className='m-0 p-0 mt-1 '>
-          <div className='flex flex-col items-center justify-center w-full tablet:h-screen tablet:flex-row'>
-            <div className='border-r-2 w-full tablet:w-1/2 tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-20 flex items-center justify-center '>
-              <h1 className='text-xl tablet:text-3xl laptop:text-5xl '>Breakfast</h1>
+          <div className='flex flex-col items-center justify-center w-full tablet:h-screen laptop:flex-row'>
+            <div className='border-r-2 w-full laptop:w-1/2  tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-[100px] '>
+              <Image
+                src={ coffee }
+                alt='coffee'
+                objectFit='cover'
+                priority
+              />
 
             </div>
 
-            <div className="tablet:w-1/2 px-6 py-4 tablet:py-0 tablet:px-32 ">
+            <div className="laptop:w-1/2 px-6 py-4 tablet:py-6 laptop:px-32 ">
               <h1 className='text-2xl tablet:text-3xl laptop:text-5xl font-semibold ' >Breakfast</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur quo. itaque doloribus. Quibusdam odio, incidunt fuga aut blanditiis laborum  placeat!</p>
 
@@ -44,8 +50,8 @@ export default function Page () {
             transition={ { delay: 0.6 } }
           >
 
-            <div className='flex flex-col-reverse items-center justify-center w-full tablet:h-screen tablet:flex-row'>
-              <div className="tablet:w-1/2 px-6 py-4 tablet:px-32 tablet:py-0">
+            <div className='flex flex-col-reverse items-center justify-center w-full tablet:h-screen laptop:flex-row'>
+              <div className="laptop:w-1/2 px-6 py-4 tablet:py-6 laptop:px-32">
                 <h1 className='text-2xl tablet:text-3xl laptop:text-5xl font-semibold' >Lunch</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur quo. itaque doloribus. Quibusdam odio, incidunt fuga aut blanditiis laborum  placeat!</p>
 
@@ -54,18 +60,18 @@ export default function Page () {
                 </div>
 
               </div>
-              <div className='border-l-2 w-full tablet:w-1/2 tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-20 flex items-center justify-center '>
+              <div className='border-l-2 w-full laptop:w-1/2 tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-20 flex items-center justify-center '>
                 <h1 className='text-xl tablet:text-3xl laptop:text-5xl'>Lunch</h1>
 
               </div>
 
             </div>
-            <div className='flex flex-col items-center justify-center w-full tablet:h-screen tablet:flex-row'>
-              <div className='border-r-2 w-full tablet:w-1/2 tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-20 flex items-center justify-center '>
+            <div className='flex flex-col items-center justify-center w-full tablet:h-screen laptop:flex-row'>
+              <div className='border-r-2 w-full laptop:w-1/2 tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-20 flex items-center justify-center '>
                 <h1 className='text-xl tablet:text-3xl laptop:text-5xl'>Dinner</h1>
 
               </div>
-              <div className="tablet:w-1/2 px-6 py-4  tablet:py-0 tablet:px-32 ">
+              <div className="laptop:w-1/2 px-6 py-4 tablet:py-6 laptop:px-32">
                 <h1 className='text-2xl tablet:text-3xl laptop:text-5xl font-semibold' >Dinner</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. pariatur quo. itaque doloribus. Quibusdam odio, incidunt fuga aut blanditiis laborum  placeat!</p>
 

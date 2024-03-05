@@ -10,7 +10,7 @@ export default function MenuLayout ( { children } ) {
     return (
         <section className='antialiased font-Poppins '>
             <Menunav />
-            <div>{ children }</div>
+            <div className=' mt-16 '>{ children }</div>
             <Footer />
 
         </section>

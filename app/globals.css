@@ -24,11 +24,7 @@ html {
     margin: 0;
 }
 
-.img {
-    object-fit: cover;
-    z-index: -5;
-    background-image: linear-gradient(to left, hsla(0, 0%, 17%, 0.452), hsla(0, 0%, 35%, 0.479));
-}
+
 
 .parallax {
     background-image: linear-gradient(to left, hsla(0, 0%, 17%, 0.452), hsla(0, 0%, 35%, 0.479)), url('/pexels-rdne-stock-project-5779896.jpg');

@@ -8,21 +8,21 @@ export default function ThemeSwitch () {
   const { setTheme, resolvedTheme } = useTheme();
 
   useEffect( () => setMounted( true ), [] )
-  
+
   if ( !mounted ) return (
     <div>
       <h1>Dark</h1>
     </div>
 
   )
-  if (resolvedTheme === "dark"){
+  if ( resolvedTheme === "dark" ) {
     return (
-      <button onClick={()=> setTheme('light')}>Light</button>
+      <button onClick={ () => setTheme( 'light' ) } className='dark:text-white font-Poppins font-semibold'>Light</button>
     )
   }
-  if (resolvedTheme === "light"){
+  if ( resolvedTheme === "light" ) {
     return (
-      <button onClick={()=> setTheme('dark')}>dark</button>
+      <button onClick={ () => setTheme( 'dark' ) } className='text-gray-800 font-Poppins font-semibold'>dark</button>
     )
   }
 }
