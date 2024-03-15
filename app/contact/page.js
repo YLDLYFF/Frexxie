@@ -2,7 +2,7 @@ import Link from "next/link";
 import Contact from "../components/contact/Contact";
 export default function Page () {
   return (
-    <div className="m-0 p-0 ">
+    <div className="m-0 p-0 overflow-x-clip">
       <div className="h-dvh tablet:h-screen  flex flex-col items-center justify-center ">
         <div className='w-full flex flex-col items-center justify-center'>
           <div>

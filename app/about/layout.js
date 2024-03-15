@@ -6,7 +6,7 @@ export const metadata = {
 }
 export default function AboutLayout ({ children }) {
     return (
-        <section className='antialiased font-Poppins'>
+        <section className='antialiased font-Poppins overflow-x-hidden relative tablet:w-full h-dvh max-h-vh '>
             <Aboutnav />
             <div>{children}</div>
             <Footer />
