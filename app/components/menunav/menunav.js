@@ -16,15 +16,16 @@ export default function Menunav () {
 
 
   return (
-    <div className='fixed top-0 w-full bg-homeDefaultNav dark:bg-homeDefaultDark  shadow-md p-4 md:px-6'>
+    <div className='fixed top-0 w-full bg-homeDefaultNav dark:bg-homeDefaultDark  shadow-md p-2 '>
       <div className=' flex items-center justify-between '>
         <div>
           <h1 className='text-xl dark:text-white tablet:text-2xl laptop:text-4xl text-gray-800 border-b-2 border-neutral-300 font-Caveat'>Frexxie Foods</h1>
         </div>
         <div className='text-gray-700 dark:text-white'>
-          <ul className=' mobile:hidden tablet:flex gap-x-4 tablet:text-xl'>
-            <Link href="/"><li>Home</li></Link>
+          <ul className=' mobile:hidden tablet:flex gap-x-4 '>
+            <Link href="/"><li>Home</li></Link> 
             <Link href="/placeorder"><li>Order</li></Link>
+            <Link href="/blog"><li>Blog</li></Link>
             <Link href="/contact"><li>Contacts</li></Link>
             <Link href="/about"><li>About Us</li></Link>
             <ThemeSwitch />

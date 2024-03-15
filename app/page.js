@@ -17,9 +17,9 @@ export default function Page () {
     // bg-gradient-to-l from-white via-sky-200 to-gray-100
     // h - dvh tablet: h - vh
     // hero with links to pages
-    <div className=" text-gray-900 dark:text-white overflow-y-hidden ">
+    <div className=" text-gray-900 dark:text-white overflow-hidden relative h-svh tablet:h-screen">
       <Navbar />
-      <div className=' flex flex-col items-center justify-center relative h-svh tablet:h-screen'>
+      <div className=' flex flex-col items-center justify-center h-svh tablet:h-screen'>
         <div  ><h1 className='text-3xl tablet:text-5xl laptop:text-8xl font-Montserrat font-semibold mb-4 '>Welcome To Frexxie</h1></div>
         <div><p className=' tablet:text-xl laptop:text-2xl mb-4 animate-pulse font-semibold'>What are we doing today?...</p></div>
         <div className=' border-b'>
@@ -75,7 +75,7 @@ export default function Page () {
         </div>
       </div>
       <div>
-         {/* <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} new />   */}
+        {/* <Image className="img" src="/pexels-rachel-claire-5531303.jpg" fill={true} alt={'hero'} new />   */ }
       </div>
 
 

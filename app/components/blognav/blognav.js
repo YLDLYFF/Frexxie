@@ -17,13 +17,13 @@ export default function Blognav () {
 
 
   return (
-    <div className='px-3'>
-      <div className='  flex items-center justify-between p-2 shadow-sm sticky'>
+    <div className='p-2 shadow-md  w-full bg-homeDefaultNav dark:bg-homeDefaultDark '>
+      <div className='  flex items-center justify-between '>
         <div>
-          <h1 className='text-xl tablet:text-2xl laptop:text-4xl text-gray-800 border-b-2 border-neutral-300 font-Caveat'>Frexxie Foods</h1>
+          <h1 className='text-xl tablet:text-2xl laptop:text-4xl text-gray-800 border-b-2 border-neutral-300 font-Caveat dark:text-white'>Frexxie Foods</h1>
         </div>
         <div className='text-gray-700 '>
-          <ul className=' mobile:hidden tablet:flex gap-x-4'>
+          <ul className=' mobile:hidden tablet:flex gap-x-4 dark:text-white'>
             <Link href="/"><li>Home</li></Link>
             <Link href="/menu"><li>Menu</li></Link>
             <Link href="/placeorder"><li>Order</li></Link>
@@ -33,13 +33,13 @@ export default function Blognav () {
           </ul>
         </div>
         { isOpen == false ?
-          <div className='hidden cursor-pointer tablet:hidden ' >
+          <div className='cursor-pointer tablet:hidden ' >
             <svg onClick={ clickHandler } xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={ 1.5 } stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
           </div> :
-          <div className='hidden cursor-pointer tablet:hidden ' >
+          <div className='cursor-pointer tablet:hidden ' >
             <svg onClick={ closeClickHandler } xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={ 1.5 } stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
@@ -64,7 +64,7 @@ export default function Blognav () {
           </div>
         </nav>
         :
-        <nav className='overflow-x-hidden border absolute w-[100%] h-screen bg-white text-gray-700 translate-x-[140px] transition duration-[1.1s] backdrop-blur-lg shadow-sm tablet:hidden'>
+        <nav className='overflow-x-hidden border fixed w-[100%] h-screen bg-white text-gray-700 dark:bg-homeDefaultDark translate-x-[140px] transition duration-[1.1s] backdrop-blur-lg shadow-sm tablet:hidden'>
           <div>
 
             <div className='text-gray-700 '>

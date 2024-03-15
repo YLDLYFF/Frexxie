@@ -24,7 +24,7 @@ export default function Page () {
     }, [])
 
     return (
-        <div className="">
+        <div className="mt-10 tablet:mt-4">
             <div className=" dark:text-gray-100 dark:bg-black">
                 <div className="px-6 py-10">
                     <div>

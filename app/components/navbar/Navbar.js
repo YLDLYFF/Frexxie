@@ -17,8 +17,8 @@ export default function Navbar () {
 
 
   return (
-    <div className='px-3 bg-homeDefaultNav dark:bg-homeDefaultNavDark shadow-md'>
-      <div className='  flex items-center justify-between p-2  sticky dark:border-b-2'>
+    <div className='px-3 bg-homeDefaultNav dark:bg-black shadow-md'>
+      <div className='  flex items-center justify-between p-2  sticky '>
         <div>
           <h1 className='text-xl tablet:text-2xl laptop:text-4xl dark:border-none  font-Caveat text-gray-800 dark:text-white'>Frexxie Foods</h1>
         </div>

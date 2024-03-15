@@ -3,12 +3,12 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import coffee from './../../public/pexels-emrah-tolu-2662875.jpg'
+import coffee from './../../public/pexels-los-muertos-crew-7487365.jpg'
 
 export default function Page () {
   const ref = useRef( null );
   const { scrollYProgress } = useScroll( {
-    target: ref,
+    target: ref, 
     offset: [ "0 1", "1.33 1" ],
   } );
   const scaleProgress = useTransform( scrollYProgress, [ 0, 1 ], [ 1, 1 ] );
@@ -20,13 +20,13 @@ export default function Page () {
       <div>
         <div className='m-0 p-0 mt-1 '>
           <div className='flex flex-col items-center justify-center w-full tablet:h-screen laptop:flex-row'>
-            <div className='border-r-2 w-full laptop:w-1/2  tablet:h-screen bg-gray-200 dark:bg-zinc-900 p-[100px] '>
-              <Image
+            <div className='border-r-2 w-full laptop:w-1/2 bg-[url("/public/pexels-los-muertos-crew-7487365.jpg")] bg-cover bg-no-repeat  tablet:h-screen  dark:bg-zinc-900 p-[100px] '>
+              {/* <Image
                 src={ coffee }
                 alt='coffee'
                 objectFit='cover'
                 priority
-              />
+              /> */}
 
             </div>
 

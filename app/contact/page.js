@@ -1,19 +1,28 @@
 import Link from "next/link";
-import ContactForm from "../components/contact/contact";
+import Contact from "../components/contact/Contact";
 export default function Page () {
   return (
-    <div className="">
-      <div className=" min-h-[80dvh] flex items-center justify-center tablet:min-h-screen">
-        {/* moving balls */}
-        <div className="relative w-full flex items-center justify-center">
+    <div className="m-0 p-0 ">
+      <div className="h-dvh tablet:h-screen  flex flex-col items-center justify-center ">
+        <div className='w-full flex flex-col items-center justify-center'>
+          <div>
+            <h1 className='text-3xl font-semibold tablet:text-4xl laptop:text-6xl'>Talk to Us</h1>
+          </div>
+          <div className='text-center mt-2'>
+            <p>Anything from food reviews, customer service, experiences etc...</p>
+          </div>
+        </div>
+
+        {/* moving balls */ }
+        {/* <div className="relative w-full dark:hidden flex items-center justify-center">
           <div className="absolute top-5 -left-30 w-[10rem] h-[10rem] bg-purple-300 rounded-full mix-blend-multiply filter blur-lg animate-blob opacity-65 tablet:-top-36 tablet:w-[40rem] tablet:h-[40rem]"></div>
           <div className="absolute top-0 right-[2rem] w-[10rem] h-[10rem]  bg-yellow-300 rounded-full mix-blend-multiply filter blur-lg animate-blob animation-delay-2000 opacity-65 tablet:left-[30rem] tablet:-top-40 tablet:w-[40rem] tablet:h-[40rem]"></div>
           <div className="absolute top-0 left-[2rem] w-[10rem] h-[10rem]  bg-pink-300 rounded-full mix-blend-multiply filter blur-lg animate-blob animation-delay-4000 opacity-65  tablet:left-[44rem] tablet:-top-40 tablet:w-[40rem] tablet:h-[40rem]"></div>
-        </div>
+        </div> */}
         {/* contact form */ }
-        <ContactForm />
-        
-        
+        <Contact />
+
+
       </div>
 
 

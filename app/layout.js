@@ -13,7 +13,7 @@ export default function RootLayout ( { children } ) {
   return (
     <html lang="en">
       
-      <body className='overflow-x-hidden relative max-w-[100%] tablet:w-full h-dvh antialiased font-sans bg-white text-gray-900 dark:bg-black dark:text-white transition-all transition-duration-[0.9s]'>
+      <body className='overflow-x-hidden relative tablet:w-full h-dvh max-h-vh antialiased font-sans bg-white text-gray-900 dark:bg-black dark:text-white transition-all transition-duration-[0.9s]'>
         <Providers>
           <main>{children}</main>
         </Providers>
