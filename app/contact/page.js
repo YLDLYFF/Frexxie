@@ -6,7 +6,7 @@ export default function Page () {
       <div className="h-dvh tablet:h-screen  flex flex-col items-center justify-center ">
         <div className='w-full flex flex-col items-center justify-center'>
           <div>
-            <h1 className='text-3xl font-semibold tablet:text-4xl laptop:text-6xl'>Talk to Us</h1>
+            <h1 className='text-3xl font-semibold tablet:text-4xl laptop:text-6xl'>Speak to Us</h1>
           </div>
           <div className='text-center mt-2'>
             <p>Anything from food reviews, customer service, experiences etc...</p>
